@@ -88,7 +88,7 @@ public class CameraTest {
 
             exactly(1).of(memoryCard).write(data);
 
-            exactly(0).of(sensor).powerDown();
+            exactly(1).of(sensor).powerDown();
         }});
 
         Camera camera = new Camera(sensor, memoryCard);
